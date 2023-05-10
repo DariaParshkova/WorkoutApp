@@ -13,6 +13,8 @@ enum NavBarPosition {
 }
 class BaseController : UIViewController {
     override func viewDidLoad() {
+        addViews()
+        layoutViews()
         configure()
     }
     @objc func navBarLeftButtonHandler() {

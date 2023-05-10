@@ -21,6 +21,7 @@
 		65B8AC992A0000A00086D7B5 /* SessionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B8AC982A0000A00086D7B5 /* SessionController.swift */; };
 		65B8AC9B2A000BEF0086D7B5 /* ProgressController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B8AC9A2A000BEF0086D7B5 /* ProgressController.swift */; };
 		65B8AC9D2A000C140086D7B5 /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B8AC9C2A000C140086D7B5 /* SettingsController.swift */; };
+		65E225342A096CB4006DC6C1 /* SecondaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E225332A096CB4006DC6C1 /* SecondaryButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		65B8AC982A0000A00086D7B5 /* SessionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionController.swift; sourceTree = "<group>"; };
 		65B8AC9A2A000BEF0086D7B5 /* ProgressController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressController.swift; sourceTree = "<group>"; };
 		65B8AC9C2A000C140086D7B5 /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
+		65E225332A096CB4006DC6C1 /* SecondaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 		65A29B2129FBE73E00BFEC58 /* WorkoutApp */ = {
 			isa = PBXGroup;
 			children = (
+				65B8AC9529FFFFF20086D7B5 /* Session */,
 				65A29B3D29FBFA6400BFEC58 /* Helpers */,
 				65A29B3629FBE7D600BFEC58 /* Application */,
 				65B8AC8D29FFFBA50086D7B5 /* Controllers */,
@@ -122,7 +125,6 @@
 			children = (
 				65B8AC972A00000B0086D7B5 /* Settings */,
 				65B8AC9629FFFFFF0086D7B5 /* Progress */,
-				65B8AC9529FFFFF20086D7B5 /* Session */,
 				65B8AC9429FFFFE20086D7B5 /* OverView */,
 				65B8AC9329FFFFD10086D7B5 /* Base */,
 			);
@@ -143,6 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				65A29B2629FBE73E00BFEC58 /* OverviewController.swift */,
+				65E225322A096C46006DC6C1 /* Views */,
 			);
 			path = OverView;
 			sourceTree = "<group>";
@@ -169,6 +172,14 @@
 				65B8AC9C2A000C140086D7B5 /* SettingsController.swift */,
 			);
 			path = Settings;
+			sourceTree = "<group>";
+		};
+		65E225322A096C46006DC6C1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				65E225332A096CB4006DC6C1 /* SecondaryButton.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -247,6 +258,7 @@
 				65A29B2329FBE73E00BFEC58 /* AppDelegate.swift in Sources */,
 				65B8AC992A0000A00086D7B5 /* SessionController.swift in Sources */,
 				65B8AC9D2A000C140086D7B5 /* SettingsController.swift in Sources */,
+				65E225342A096CB4006DC6C1 /* SecondaryButton.swift in Sources */,
 				65B8AC9B2A000BEF0086D7B5 /* ProgressController.swift in Sources */,
 				65B8AC8C29FFF6950086D7B5 /* NavBarController.swift in Sources */,
 				65A29B4229FBFE0500BFEC58 /* Resourses.swift in Sources */,

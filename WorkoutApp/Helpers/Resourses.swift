@@ -14,6 +14,9 @@ enum Resources {
         
         static var background = UIColor(hexString: "#F8F9F9")
         static var separator = UIColor(hexString: "#DDDDDD")
+        static var secondary = UIColor(hexString: "#D8D8D8")
+        
+        
         static var titleGray = UIColor(hexString: "#545C77")
         
     }
@@ -24,6 +27,16 @@ enum Resources {
             static var progress = "Progress"
             static var settings = "Settings"
         }
+        enum NavBar {
+            static var session  = "High Intensity Cardio"
+        }
+        enum Sessions {
+            static var navBarLeft = "Pause"
+            static var navBarRight = "Finish"
+        }
+        enum Overview {
+            static var allWorkoutsButton = "all workouts"
+        }
     }
     
     enum Images {
@@ -33,6 +46,10 @@ enum Resources {
         static var progress = UIImage(named: "progress_tab")
         static var settins = UIImage(named: "settings_tab")
         }
+        enum Common {
+            static var downArrow = UIImage(named: "down_arrow")
+        }
+        
     }
     enum Fonts {
         static func helveticaRegular(with size: CGFloat) -> UIFont {
@@ -40,4 +57,9 @@ enum Resources {
         }
     }
     
+    enum OverView {
+        static var allWorkoutsButton = "All Workouts"
+    }
+   
+   
 }

@@ -32,13 +32,13 @@ extension WeekView {
 extension WeekView.WeekDayView {
     override func setupViews() {
         super.setupViews()
-        addView(stackView)
+        setupView(stackView)
         //addArrangedSubview - добавляет вид в конец упорядоченных подвидов
         stackView.addArrangedSubview(nameLabel)
         stackView.addArrangedSubview(dateLabel)
     }
-    override func constrauinViews() {
-        super.constrauinViews()
+    override func constraintViews() {
+        super.constraintViews()
         NSLayoutConstraint.activate([
             stackView.centerXAnchor.constraint(equalTo: centerXAnchor),
             stackView.centerYAnchor.constraint(equalTo: centerYAnchor)

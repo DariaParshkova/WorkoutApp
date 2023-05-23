@@ -12,7 +12,7 @@ class BaseView : UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupViews()
-        constrauinViews()
+        constraintViews()
         configureApperance()
         
     }
@@ -25,7 +25,7 @@ class BaseView : UIView {
 
 @objc extension BaseView {
     func setupViews() {}
-    func constrauinViews() {}
+    func constraintViews() {}
     func configureApperance() {}
     
 }

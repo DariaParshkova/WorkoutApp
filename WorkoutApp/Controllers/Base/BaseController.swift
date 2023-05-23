@@ -13,9 +13,9 @@ enum NavBarPosition {
 }
 class BaseController : UIViewController {
     override func viewDidLoad() {
-        addViews()
-        layoutViews()
-        configure()
+        setupViews()
+        constraintViews()
+        configureApperance()
     }
     @objc func navBarLeftButtonHandler() {
         print("Navbar left button")
@@ -28,9 +28,9 @@ class BaseController : UIViewController {
     
 }
 @objc extension BaseController {
-    func addViews () {}
-    func layoutViews() {}
-    func configure() {
+    func setupViews () {}
+    func constraintViews() {}
+    func configureApperance() {
         view.backgroundColor =  R.Colors.background
     }
     

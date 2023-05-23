@@ -28,13 +28,13 @@ final class OverviewNavBar: BaseView {
 extension OverviewNavBar {
     override func setupViews() {
         super.setupViews()
-        addView(allWorkoutsButton)
-        addView(titleLabel)
-        addView(addButton)
-        addView(weekView)
+        setupView(allWorkoutsButton)
+        setupView(titleLabel)
+        setupView(addButton)
+        setupView(weekView)
     }
-    override func constrauinViews() {
-        super.constrauinViews()
+    override func constraintViews() {
+        super.constraintViews()
         NSLayoutConstraint.activate([
    
             addButton.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant:8),

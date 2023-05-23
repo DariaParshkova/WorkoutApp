@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		650AB2602A1D1B2800FA2A6E /* BaseInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650AB25F2A1D1B2800FA2A6E /* BaseInfoView.swift */; };
 		6597185B2A12908600336041 /* OverviewNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6597185A2A12908600336041 /* OverviewNavBar.swift */; };
 		6597185D2A1290EF00336041 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6597185C2A1290EF00336041 /* BaseView.swift */; };
 		65A29B2329FBE73E00BFEC58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A29B2229FBE73E00BFEC58 /* AppDelegate.swift */; };
@@ -30,6 +31,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		650AB25F2A1D1B2800FA2A6E /* BaseInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseInfoView.swift; sourceTree = "<group>"; };
 		6597185A2A12908600336041 /* OverviewNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewNavBar.swift; sourceTree = "<group>"; };
 		6597185C2A1290EF00336041 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		65A29B1F29FBE73E00BFEC58 /* WorkoutApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorkoutApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -72,6 +74,15 @@
 				65B8AC8B29FFF6950086D7B5 /* NavBarController.swift */,
 			);
 			path = Navigation;
+			sourceTree = "<group>";
+		};
+		650AB25E2A1D1AEE00FA2A6E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6597185C2A1290EF00336041 /* BaseView.swift */,
+				650AB25F2A1D1B2800FA2A6E /* BaseInfoView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		65A29B1629FBE73E00BFEC58 = {
@@ -155,8 +166,8 @@
 		65B8AC9329FFFFD10086D7B5 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				650AB25E2A1D1AEE00FA2A6E /* Views */,
 				65B8AC8F29FFFBE60086D7B5 /* BaseController.swift */,
-				6597185C2A1290EF00336041 /* BaseView.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -292,6 +303,7 @@
 				65A29B2329FBE73E00BFEC58 /* AppDelegate.swift in Sources */,
 				65B8AC992A0000A00086D7B5 /* SessionController.swift in Sources */,
 				65B8AC9D2A000C140086D7B5 /* SettingsController.swift in Sources */,
+				650AB2602A1D1B2800FA2A6E /* BaseInfoView.swift in Sources */,
 				65E225342A096CB4006DC6C1 /* SecondaryButton.swift in Sources */,
 				65B8AC9B2A000BEF0086D7B5 /* ProgressController.swift in Sources */,
 				65B8AC8C29FFF6950086D7B5 /* NavBarController.swift in Sources */,

@@ -12,11 +12,11 @@ class SessionController: BaseController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        title = Resources.Strings.NavBar.session
-        navigationController?.tabBarItem.title = Resources.Strings.TabBar.session
+        title = R.Strings.NavBar.session
+        navigationController?.tabBarItem.title = R.Strings.Sessions.navBarLeft
         
-        addNavBarButton(at: .left, with: Resources.Strings.Sessions.navBarLeft)
-        addNavBarButton(at: .right, with: Resources.Strings.Sessions.navBarRight)
+        addNavBarButton(at: .left, with: R.Strings.Sessions.navBarLeft)
+        addNavBarButton(at: .right, with: R.Strings.Sessions.navBarRight)
     }
     
     override func navBarLeftButtonHandler() {

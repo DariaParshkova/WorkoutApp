@@ -13,7 +13,7 @@ class SettingsController: BaseController {
         super.viewDidLoad()
 
         title = "Settings"
-        navigationController?.tabBarItem.title = Resources.Strings.TabBar.settings
+        navigationController?.tabBarItem.title = R.Strings.TabBar.title(for: .settings)
     }
     
 

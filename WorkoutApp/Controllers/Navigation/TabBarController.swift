@@ -17,10 +17,15 @@ final class TabBarController : UITabBarController {
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
         configureApperance()
+        switchTo(tab: .session) //при запуске получаем нужный таб
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    //у UITabBarController есть selectedIndex куда можно установить конкретно индекс нашего Taba 
+    func switchTo(tab: Tabs) {
+        selectedIndex = tab.rawValue
     }
     
     private func configureApperance() {

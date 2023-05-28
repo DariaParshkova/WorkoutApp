@@ -21,6 +21,13 @@ extension TimerView {
                                           startAngle: startAngle,
                                           endAngle: endAngle,
                                           clockwise: true)
+            let defaultCircleLayer = CAShapeLayer()
+            defaultCircleLayer.path = circlePath.cgPath
+            defaultCircleLayer.strokeColor = R.Colors.separator.cgColor
+            defaultCircleLayer.lineWidth = 20
+            defaultCircleLayer.strokeEnd = 1
+            defaultCircleLayer.fillColor = UIColor.clear.cgColor
+            defaultCircleLayer.lineCap = .round
             
             let circleLayer = CAShapeLayer()
             circleLayer.path = circlePath.cgPath
@@ -30,6 +37,9 @@ extension TimerView {
             circleLayer.fillColor = UIColor.clear.cgColor
             circleLayer.lineCap = .round
             
+            let dotAngle = CGFloat.pi * (7 / 6 - )
+            
+            layer.addSublayer(defaultCircleLayer)
             layer.addSublayer(circleLayer)
         }
     }

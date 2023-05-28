@@ -15,7 +15,7 @@ extension WeekView {
         func configure(with index : Int, and name: String) {
             
             let startOfWeek = Date().startOfWeek
-            let currentDay = startOfWeek.goForward(to: index)
+            let currentDay = startOfWeek.agoForward(to: index)
             let day = Calendar.current.component(.day, from: currentDay)
             let isToday = currentDay.stripTime() == Date().stripTime()
             backgroundColor = isToday ? R.Colors.active : R.Colors.background

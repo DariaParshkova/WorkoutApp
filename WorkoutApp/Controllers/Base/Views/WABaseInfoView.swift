@@ -19,7 +19,7 @@ class WABaseInfoView : BaseView {
     private let contentView : UIView = {
         let view = UIView()
         view.backgroundColor = .white
-        view.layer.backgroundColor = R.Colors.separator.cgColor
+        view.layer.borderColor = R.Colors.separator.cgColor
         view.layer.borderWidth = 1
         view.layer.cornerRadius = 5
         return view

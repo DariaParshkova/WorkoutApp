@@ -37,10 +37,37 @@ extension TimerView {
             circleLayer.fillColor = UIColor.clear.cgColor
             circleLayer.lineCap = .round
             
-            let dotAngle = CGFloat.pi * (7 / 6 - )
+            let dotAngle = CGFloat.pi * (7 / 6 - (8 / 6 * percent)) //положение для корректной отрисовки точки
+            let dotPoint = CGPoint(x: cos(-dotAngle) * radius + center.x ,
+                                        y: sin(-dotAngle) * radius + center.y)
+            // путь по которому рисуется линия
+            let dotPath = UIBezierPath()
+            dotPath.move(to: dotPoint) //дефолтная точка
+            dotPath.addLine(to: dotPoint) //двигаемся прямой линией до dotPoint
+            //для точки при нулевом прогрессе 
+            let bigDotLayer = CAShapeLayer()
+            bigDotLayer.path = dotPath.cgPath //!!!какой путь заполнит слой cgPath так как это Core Graphic!!!
+            bigDotLayer.fillColor = UIColor.clear.cgColor
+            bigDotLayer.strokeColor = R.Colors.active.cgColor //цвет линии
+            bigDotLayer.lineCap = .round //закругленные края
+            bigDotLayer.lineWidth = 20
+            
+            //слой рисующий эту линию
+            let dotLayer = CAShapeLayer()
+            dotLayer.path = dotPath.cgPath //!!!какой путь заполнит слой cgPath так как это Core Graphic!!!
+            dotLayer.fillColor = UIColor.clear.cgColor 
+            dotLayer.strokeColor = UIColor.white.cgColor //цвет линии
+            dotLayer.lineCap = .round //закругленные края
+            dotLayer.lineWidth = 8
+            
+            
+            
+            
             
             layer.addSublayer(defaultCircleLayer)
             layer.addSublayer(circleLayer)
+            layer.addSublayer(bigDotLayer)
+            layer.addSublayer(dotLayer)
         }
     }
 }

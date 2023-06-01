@@ -9,6 +9,8 @@ import UIKit
 extension TimerView {
     final class ProgressView : UIView {
         func drawProgress(with percent: CGFloat) {
+            layer.sublayers?.removeAll() //для того чтобы слои не рисовались поверх дефолтных слоев и не скоадывались в одну огромную стопку слоев, при анимации это давало небольшой эффект залипания. Каждый раз когда дергается drawProgress удаляеится предыдущий слой и рисуется новый! 
+            
             let circleFrame = UIScreen.main.bounds.width - (15 + 40) * 2 //15 отступ до contentView и 40 До центра линии прогресса и умножаем на 2 так как это отступы  с двух сторон
             let radius = circleFrame / 2 //есть некоторый frame, где радиус это его половина
             let center = CGPoint(x: radius, y: radius)
@@ -59,10 +61,6 @@ extension TimerView {
             dotLayer.strokeColor = UIColor.white.cgColor //цвет линии
             dotLayer.lineCap = .round //закругленные края
             dotLayer.lineWidth = 8
-            
-            
-            
-            
             
             layer.addSublayer(defaultCircleLayer)
             layer.addSublayer(circleLayer)

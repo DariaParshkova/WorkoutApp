@@ -37,8 +37,9 @@ enum R {
             
         }
         enum Sessions {
-            static let navBarLeft = "Pause"
-            static let navBarRight = "Finish"
+            static let navBarStart = "Start"
+            static let navBarPause = "Pause"
+            static let navBarFinish = "Finish"
         }
         enum Overview {
             static var allWorkoutsButton = "all workouts"

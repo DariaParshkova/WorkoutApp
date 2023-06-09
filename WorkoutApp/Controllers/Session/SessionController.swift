@@ -9,10 +9,11 @@ import UIKit
 
 class SessionController: BaseController {
     private let timerView = TimerView()
-    private let timerDuration = 3.0
+    private let timerDuration = 5.0 //продолжительность таймера !!!УБЕРИ ПОТОМ!!!!!
+    
     override func navBarLeftButtonHandler() {
         if timerView.state == .isStopped {
-            timerView.startTimer()
+            timerView.startTimer ()
         } else {
             timerView.pauseTimer()
         }
@@ -37,10 +38,6 @@ extension SessionController {
             timerView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 15),
             timerView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 15),
             timerView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -15),
-            timerView.heightAnchor.constraint(equalToConstant: 500)
-            
-            
-        
         
         ])
     }
@@ -55,7 +52,11 @@ extension SessionController {
         addNavBarButton(at: .left, with: R.Strings.Sessions.navBarStart)
         addNavBarButton(at: .right, with: R.Strings.Sessions.navBarFinish)
         
-        timerView.configure(with: timerDuration, progress: 0.5)
+        timerView.configure(with: timerDuration, progress: 0)
+        
+        timerView.callBack = { [weak self] in
+                self?.navBarRightButtonHandler()
+        }
     }
 }
     

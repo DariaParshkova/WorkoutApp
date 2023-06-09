@@ -62,10 +62,63 @@ extension TimerView {
             dotLayer.lineCap = .round //закругленные края
             dotLayer.lineWidth = 8
             
+            //MARK: - Bars
+            //для черточек
+            let barsFrame = UIScreen.main.bounds.width - (15 + 40 + 25) * 2
+            let barsRadius = barsFrame / 2
+            //рисуем путь окружности
+            let barsPath = UIBezierPath(arcCenter: center,
+                                        radius: barsRadius,
+                                        startAngle: startAngle,
+                                        endAngle: endAngle,
+                                        clockwise: true)
+            //создаем слой который будет рисоваться сами черточки, пустой прозрачный родительский layer
+            let barsLayer = CAShapeLayer()
+            barsLayer.path = barsPath.cgPath //пусть по которому они будут рисоваться
+            barsLayer.fillColor = UIColor.clear.cgColor // прозрачный цвет наполнения
+            barsLayer.strokeColor = UIColor.clear.cgColor //цвет линии
+            barsLayer.lineWidth = 6 //ширина линии
+            
+            //Точки начала и конца каждой черточки
+            let startBarRadius = barsRadius - barsLayer.lineWidth * 0.5 //от большого радиуса до центра
+            let endBarRadius = startBarRadius + 6 //маленький радиус до центра
+            
+            var angle : CGFloat = 7 / 6     //первый угол где должна находиться черточка и потом рисуем следующ по этому углу
+            (1...9).forEach { _ in
+                let barAngle = CGFloat.pi * angle
+                //вычисляем начало точки
+                let startBarPoint = CGPoint(
+                    x: cos(-barAngle) * startBarRadius + center.x,
+                    y: sin(-barAngle) * startBarRadius + center.y
+                )
+                //конец точки
+                let endBarPoint = CGPoint(
+                    x: cos(-barAngle) * endBarRadius + center.x,
+                    y: sin(-barAngle) * endBarRadius + center.y
+                )
+                //путь от начала до конца точки, который мы наполним визуалом
+                let barPath = UIBezierPath()
+                barPath.move(to: startBarPoint)
+                barPath.addLine(to: endBarPoint)
+                //создаем слой который рисует точку-визуал
+                let barLayer = CAShapeLayer()
+                barLayer.path = barPath.cgPath
+                barLayer.fillColor = UIColor.clear.cgColor
+                barLayer.strokeColor = angle >= (7 / 6 - (8 / 6 * percent)) ? R.Colors.active.cgColor : R.Colors.separator.cgColor //цвет в зависимости от процента текущего угла
+                barLayer.lineCap = .round //закругление края
+                barLayer.lineWidth = 4 //ширина линии черточки
+    
+                barsLayer.addSublayer(barLayer) //добавляем на глобальный layer
+                
+                angle -= 1 / 6 //увеличиваем угол на 1/6 делаем движение вверх и рисуем след черточку в итерации
+                
+            }
+        
             layer.addSublayer(defaultCircleLayer)
             layer.addSublayer(circleLayer)
             layer.addSublayer(bigDotLayer)
             layer.addSublayer(dotLayer)
+            layer.addSublayer(barsLayer)
         }
     }
 }

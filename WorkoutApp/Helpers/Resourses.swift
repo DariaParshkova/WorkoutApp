@@ -40,6 +40,9 @@ enum R {
             static let navBarStart = "Start"
             static let navBarPause = "Pause"
             static let navBarFinish = "Finish"
+            
+            static let elepsedTime = "Elepsed Time"
+            static let remainingTime = "Remaining Time"
         }
         enum Overview {
             static var allWorkoutsButton = "all workouts"

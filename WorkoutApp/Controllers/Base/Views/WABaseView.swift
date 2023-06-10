@@ -8,7 +8,7 @@
 import UIKit
  
 
-class BaseView : UIView {
+class WABaseView : UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupViews()
@@ -23,7 +23,7 @@ class BaseView : UIView {
     
 }
 
-@objc extension BaseView {
+@objc extension WABaseView {
     func setupViews() {}
     func constraintViews() {}
     func configureApperance() {

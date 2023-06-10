@@ -7,7 +7,7 @@
 
 import UIKit
 extension TimerView {
-    final class ProgressView : UIView {
+    final class ProgressView : WABaseView {
         func drawProgress(with percent: CGFloat) {
             layer.sublayers?.removeAll() //для того чтобы слои не рисовались поверх дефолтных слоев и не скоадывались в одну огромную стопку слоев, при анимации это давало небольшой эффект залипания. Каждый раз когда дергается drawProgress удаляеится предыдущий слой и рисуется новый! 
             

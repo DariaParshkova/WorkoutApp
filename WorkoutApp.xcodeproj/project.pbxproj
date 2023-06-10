@@ -10,8 +10,9 @@
 		650AB2602A1D1B2800FA2A6E /* WABaseInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650AB25F2A1D1B2800FA2A6E /* WABaseInfoView.swift */; };
 		657F8F1B2A2270120019B835 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657F8F1A2A2270120019B835 /* TimerView.swift */; };
 		657F8F1D2A22703E0019B835 /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657F8F1C2A22703E0019B835 /* ProgressView.swift */; };
+		6590F2EE2A34A01C00A9568B /* PercentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6590F2ED2A34A01C00A9568B /* PercentView.swift */; };
 		6597185B2A12908600336041 /* OverviewNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6597185A2A12908600336041 /* OverviewNavBar.swift */; };
-		6597185D2A1290EF00336041 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6597185C2A1290EF00336041 /* BaseView.swift */; };
+		6597185D2A1290EF00336041 /* WABaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6597185C2A1290EF00336041 /* WABaseView.swift */; };
 		65A29B2329FBE73E00BFEC58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A29B2229FBE73E00BFEC58 /* AppDelegate.swift */; };
 		65A29B2529FBE73E00BFEC58 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A29B2429FBE73E00BFEC58 /* SceneDelegate.swift */; };
 		65A29B2729FBE73E00BFEC58 /* OverviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A29B2629FBE73E00BFEC58 /* OverviewController.swift */; };
@@ -36,8 +37,9 @@
 		650AB25F2A1D1B2800FA2A6E /* WABaseInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WABaseInfoView.swift; sourceTree = "<group>"; };
 		657F8F1A2A2270120019B835 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		657F8F1C2A22703E0019B835 /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
+		6590F2ED2A34A01C00A9568B /* PercentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PercentView.swift; sourceTree = "<group>"; };
 		6597185A2A12908600336041 /* OverviewNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewNavBar.swift; sourceTree = "<group>"; };
-		6597185C2A1290EF00336041 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		6597185C2A1290EF00336041 /* WABaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WABaseView.swift; sourceTree = "<group>"; };
 		65A29B1F29FBE73E00BFEC58 /* WorkoutApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorkoutApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65A29B2229FBE73E00BFEC58 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		65A29B2429FBE73E00BFEC58 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -83,7 +85,7 @@
 		650AB25E2A1D1AEE00FA2A6E /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				6597185C2A1290EF00336041 /* BaseView.swift */,
+				6597185C2A1290EF00336041 /* WABaseView.swift */,
 				650AB25F2A1D1B2800FA2A6E /* WABaseInfoView.swift */,
 			);
 			path = Views;
@@ -102,6 +104,7 @@
 			children = (
 				657F8F1A2A2270120019B835 /* TimerView.swift */,
 				657F8F1C2A22703E0019B835 /* ProgressView.swift */,
+				6590F2ED2A34A01C00A9568B /* PercentView.swift */,
 			);
 			path = Timer;
 			sourceTree = "<group>";
@@ -324,6 +327,7 @@
 				65A29B3929FBEAD100BFEC58 /* TabBarController.swift in Sources */,
 				65A29B2329FBE73E00BFEC58 /* AppDelegate.swift in Sources */,
 				65B8AC992A0000A00086D7B5 /* SessionController.swift in Sources */,
+				6590F2EE2A34A01C00A9568B /* PercentView.swift in Sources */,
 				65B8AC9D2A000C140086D7B5 /* SettingsController.swift in Sources */,
 				650AB2602A1D1B2800FA2A6E /* WABaseInfoView.swift in Sources */,
 				657F8F1B2A2270120019B835 /* TimerView.swift in Sources */,
@@ -333,7 +337,7 @@
 				65B8AC8C29FFF6950086D7B5 /* NavBarController.swift in Sources */,
 				65A29B4229FBFE0500BFEC58 /* Resourses.swift in Sources */,
 				65A29B4029FBFAC300BFEC58 /* UIColor + ext.swift in Sources */,
-				6597185D2A1290EF00336041 /* BaseView.swift in Sources */,
+				6597185D2A1290EF00336041 /* WABaseView.swift in Sources */,
 				65FF276D2A15380F00859125 /* WeekDayView.swift in Sources */,
 				65B8AC9029FFFBE60086D7B5 /* BaseController.swift in Sources */,
 				65A29B2529FBE73E00BFEC58 /* SceneDelegate.swift in Sources */,

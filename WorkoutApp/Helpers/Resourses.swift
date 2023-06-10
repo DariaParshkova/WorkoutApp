@@ -16,7 +16,6 @@ enum R {
         static let separator = UIColor(hexString: "#E8ECEF")
         static let secondary = UIColor(hexString: "#F0F3FF")
         
-        
         static let titleGray = UIColor(hexString: "#545C77")
         
     }
@@ -37,8 +36,8 @@ enum R {
             
         }
         enum Sessions {
-            static let navBarStart = "Start"
-            static let navBarPause = "Pause"
+            static let navBarStart = "Start   "
+            static let navBarPause = "Pause   "
             static let navBarFinish = "Finish"
             
             static let elepsedTime = "Elepsed Time"

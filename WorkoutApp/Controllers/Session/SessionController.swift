@@ -11,7 +11,7 @@ class SessionController: BaseController {
     private let timerView = TimerView()
     private let timerDuration = 5.0 //продолжительность таймера !!!УБЕРИ ПОТОМ!!!!!
     private let statsView = StatsView(with: R.Strings.Sessions.workoutStats)
-    private let stepsView = WABaseInfoView(with: R.Strings.Sessions.stepsCounter)
+    private let stepsView = StepsView(with: R.Strings.Sessions.stepsCounter)
     
     override func navBarLeftButtonHandler() {
         if timerView.state == .isStopped {
@@ -78,6 +78,11 @@ extension SessionController {
                                    .totalSteps(value: "7.682"),
                                    .totalDistance(value: "8.25")
                                   ])
+        stepsView.configure(with: [ .init(value: "8k", heightMultiplayer: 1, title: "2/14"),
+                                    .init(value: "7k", heightMultiplayer: 0.8, title: "2/15"),
+                                    .init(value: "5k", heightMultiplayer: 0.6, title: "2/16"),
+                                    .init(value: "6k", heightMultiplayer: 0.7, title: "2/17"),
+        ])
     }
 }
     

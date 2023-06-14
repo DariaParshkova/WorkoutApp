@@ -10,6 +10,8 @@
 		650AB2602A1D1B2800FA2A6E /* WABaseInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650AB25F2A1D1B2800FA2A6E /* WABaseInfoView.swift */; };
 		657F8F1B2A2270120019B835 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657F8F1A2A2270120019B835 /* TimerView.swift */; };
 		657F8F1D2A22703E0019B835 /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657F8F1C2A22703E0019B835 /* ProgressView.swift */; };
+		658B0CBF2A38B5C2000E9087 /* StatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658B0CBE2A38B5C2000E9087 /* StatsView.swift */; };
+		658B0CC22A38B620000E9087 /* StatsItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658B0CC12A38B620000E9087 /* StatsItemView.swift */; };
 		6590F2EE2A34A01C00A9568B /* PercentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6590F2ED2A34A01C00A9568B /* PercentView.swift */; };
 		6597185B2A12908600336041 /* OverviewNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6597185A2A12908600336041 /* OverviewNavBar.swift */; };
 		6597185D2A1290EF00336041 /* WABaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6597185C2A1290EF00336041 /* WABaseView.swift */; };
@@ -37,6 +39,8 @@
 		650AB25F2A1D1B2800FA2A6E /* WABaseInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WABaseInfoView.swift; sourceTree = "<group>"; };
 		657F8F1A2A2270120019B835 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		657F8F1C2A22703E0019B835 /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
+		658B0CBE2A38B5C2000E9087 /* StatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsView.swift; sourceTree = "<group>"; };
+		658B0CC12A38B620000E9087 /* StatsItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsItemView.swift; sourceTree = "<group>"; };
 		6590F2ED2A34A01C00A9568B /* PercentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PercentView.swift; sourceTree = "<group>"; };
 		6597185A2A12908600336041 /* OverviewNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewNavBar.swift; sourceTree = "<group>"; };
 		6597185C2A1290EF00336041 /* WABaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WABaseView.swift; sourceTree = "<group>"; };
@@ -95,6 +99,8 @@
 			isa = PBXGroup;
 			children = (
 				657F8F192A226FD50019B835 /* Timer */,
+				658B0CBD2A38B255000E9087 /* Steps */,
+				658B0CBC2A38B243000E9087 /* Stats */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -107,6 +113,30 @@
 				6590F2ED2A34A01C00A9568B /* PercentView.swift */,
 			);
 			path = Timer;
+			sourceTree = "<group>";
+		};
+		658B0CBC2A38B243000E9087 /* Stats */ = {
+			isa = PBXGroup;
+			children = (
+				658B0CC02A38B5FC000E9087 /* Views */,
+				658B0CBE2A38B5C2000E9087 /* StatsView.swift */,
+			);
+			path = Stats;
+			sourceTree = "<group>";
+		};
+		658B0CBD2A38B255000E9087 /* Steps */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Steps;
+			sourceTree = "<group>";
+		};
+		658B0CC02A38B5FC000E9087 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				658B0CC12A38B620000E9087 /* StatsItemView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		65A29B1629FBE73E00BFEC58 = {
@@ -334,11 +364,13 @@
 				657F8F1D2A22703E0019B835 /* ProgressView.swift in Sources */,
 				65E225342A096CB4006DC6C1 /* WAButton.swift in Sources */,
 				65B8AC9B2A000BEF0086D7B5 /* ProgressController.swift in Sources */,
+				658B0CC22A38B620000E9087 /* StatsItemView.swift in Sources */,
 				65B8AC8C29FFF6950086D7B5 /* NavBarController.swift in Sources */,
 				65A29B4229FBFE0500BFEC58 /* Resourses.swift in Sources */,
 				65A29B4029FBFAC300BFEC58 /* UIColor + ext.swift in Sources */,
 				6597185D2A1290EF00336041 /* WABaseView.swift in Sources */,
 				65FF276D2A15380F00859125 /* WeekDayView.swift in Sources */,
+				658B0CBF2A38B5C2000E9087 /* StatsView.swift in Sources */,
 				65B8AC9029FFFBE60086D7B5 /* BaseController.swift in Sources */,
 				65A29B2529FBE73E00BFEC58 /* SceneDelegate.swift in Sources */,
 			);

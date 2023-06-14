@@ -16,7 +16,7 @@ class WABaseInfoView : WABaseView {
     }()
     private let button = WAButton(with: .primary)
     
-    private let contentView : UIView = {
+    internal let contentView : UIView = {
         let view = UIView()
         view.backgroundColor = .white
         view.layer.borderColor = R.Colors.separator.cgColor
@@ -46,9 +46,11 @@ class WABaseInfoView : WABaseView {
 extension WABaseInfoView {
     override func setupViews() {
         super.setupViews()
+        
         setupView(titleLabel)
         setupView(contentView)
         setupView(button)
+        
     }
     override func constraintViews() {
         super.constraintViews()

@@ -33,6 +33,7 @@ enum R {
         enum NavBar {
             static let session  = "High Intensity Cardio"
             static let overview = "Today"
+            static let progress = "Workout Progress"
             
         }
         enum Sessions {
@@ -57,6 +58,14 @@ enum R {
         }
         enum Overview {
             static var allWorkoutsButton = "all workouts"
+        }
+        enum Progress {
+            static let navBarLeft = "Export"
+            static let navBarRight = "Details"
+            
+            static let dailyPerformance = "Daily perfermance"
+            static let last7Days = "Last 7 days"
+            
         }
     }
     

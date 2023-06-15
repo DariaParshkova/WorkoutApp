@@ -6,6 +6,7 @@
 //
 
 import UIKit
+
 final class StepsView : WABaseInfoView {
     
     private let barsView = WABarsView()

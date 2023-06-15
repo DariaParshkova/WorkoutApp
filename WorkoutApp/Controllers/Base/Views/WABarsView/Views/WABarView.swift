@@ -51,7 +51,7 @@ final class WABarView : WABaseView {
         self.heightMultiplayer = data.heightMultiplayer
         super.init(frame: .zero)
         valueLabel.text = data.value
-        titleLabel.text = data.title
+        titleLabel.text = data.title.uppercased()
 
     }
     
@@ -76,15 +76,17 @@ extension WABarView {
         
         NSLayoutConstraint.activate([
             valueLabel.centerXAnchor.constraint(equalTo: centerXAnchor),
+            valueLabel.heightAnchor.constraint(equalToConstant: 10),
             
-            barView.topAnchor.constraint(equalTo: valueLabel.bottomAnchor, constant: 5),
+            barView.topAnchor.constraint(equalTo: valueLabel.bottomAnchor, constant: 7),
             barView.centerXAnchor.constraint(equalTo: centerXAnchor),
             barView.widthAnchor.constraint(equalToConstant: 17),
-            barView.heightAnchor.constraint(equalTo: heightAnchor, multiplier: heightMultiplayer, constant: -40),
+            barView.heightAnchor.constraint(equalTo: heightAnchor, multiplier: heightMultiplayer * 0.8), //0.8-80% видимая область полной максимальной высоты для того чтобы выосата при значении 0.1 отображалась корректно
             
             titleLabel.topAnchor.constraint(equalTo: barView.bottomAnchor, constant: 10),
             titleLabel.centerXAnchor.constraint(equalTo: centerXAnchor),
-            titleLabel.bottomAnchor.constraint(equalTo: bottomAnchor)
+            titleLabel.bottomAnchor.constraint(equalTo: bottomAnchor),
+            titleLabel.heightAnchor.constraint(equalToConstant: 10)
 
         ])
     }

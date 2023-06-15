@@ -17,7 +17,7 @@ final class TabBarController : UITabBarController {
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
         configureApperance()
-        switchTo(tab: .session) //при запуске получаем нужный таб
+        switchTo(tab: .progress) //при запуске получаем нужный таб
     }
     
     required init?(coder: NSCoder) {
@@ -47,7 +47,7 @@ final class TabBarController : UITabBarController {
         setViewControllers(controllers, animated: false)
     
     }
-    private func getController(for tab: Tabs) -> BaseController {
+    private func getController(for tab: Tabs) -> WABaseController {
         switch tab {
         case .overview: return OverviewController()
         case .session: return SessionController()

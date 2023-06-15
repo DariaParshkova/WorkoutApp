@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SessionController: BaseController {
+class SessionController: WABaseController {
     private let timerView = TimerView()
     private let timerDuration = 5.0 //продолжительность таймера !!!УБЕРИ ПОТОМ!!!!!
     private let statsView = StatsView(with: R.Strings.Sessions.workoutStats)

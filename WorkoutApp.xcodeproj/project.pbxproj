@@ -33,6 +33,10 @@
 		65B8AC992A0000A00086D7B5 /* SessionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B8AC982A0000A00086D7B5 /* SessionController.swift */; };
 		65B8AC9B2A000BEF0086D7B5 /* ProgressController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B8AC9A2A000BEF0086D7B5 /* ProgressController.swift */; };
 		65B8AC9D2A000C140086D7B5 /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B8AC9C2A000C140086D7B5 /* SettingsController.swift */; };
+		65D82BCE2A3CC8B1002124CC /* MonthlyPerformanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D82BCD2A3CC8B1002124CC /* MonthlyPerformanceView.swift */; };
+		65D82BD22A3CCC30002124CC /* WAChartsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D82BD12A3CCC30002124CC /* WAChartsView.swift */; };
+		65D82BD42A3CD043002124CC /* YAxisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D82BD32A3CD043002124CC /* YAxisView.swift */; };
+		65D82BD62A3CDCC9002124CC /* XAxisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D82BD52A3CDCC9002124CC /* XAxisView.swift */; };
 		65E225342A096CB4006DC6C1 /* WAButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E225332A096CB4006DC6C1 /* WAButton.swift */; };
 		65FF276B2A1535F800859125 /* WeekView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65FF276A2A1535F800859125 /* WeekView.swift */; };
 		65FF276D2A15380F00859125 /* WeekDayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65FF276C2A15380F00859125 /* WeekDayView.swift */; };
@@ -68,6 +72,10 @@
 		65B8AC982A0000A00086D7B5 /* SessionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionController.swift; sourceTree = "<group>"; };
 		65B8AC9A2A000BEF0086D7B5 /* ProgressController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressController.swift; sourceTree = "<group>"; };
 		65B8AC9C2A000C140086D7B5 /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
+		65D82BCD2A3CC8B1002124CC /* MonthlyPerformanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthlyPerformanceView.swift; sourceTree = "<group>"; };
+		65D82BD12A3CCC30002124CC /* WAChartsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WAChartsView.swift; sourceTree = "<group>"; };
+		65D82BD32A3CD043002124CC /* YAxisView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YAxisView.swift; sourceTree = "<group>"; };
+		65D82BD52A3CDCC9002124CC /* XAxisView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XAxisView.swift; sourceTree = "<group>"; };
 		65E225332A096CB4006DC6C1 /* WAButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WAButton.swift; sourceTree = "<group>"; };
 		65FF276A2A1535F800859125 /* WeekView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekView.swift; sourceTree = "<group>"; };
 		65FF276C2A15380F00859125 /* WeekDayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekDayView.swift; sourceTree = "<group>"; };
@@ -116,6 +124,7 @@
 		6565D1F12A39F7370045273E /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				65D82BCF2A3CCBE6002124CC /* WAChartsView */,
 				6565D1F42A39F9970045273E /* WABarView.swift */,
 			);
 			path = Views;
@@ -234,6 +243,7 @@
 		65B4423B2A3B2D4200414622 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				65D82BCD2A3CC8B1002124CC /* MonthlyPerformanceView.swift */,
 				65B4423C2A3B2D5A00414622 /* Performance  */,
 			);
 			path = Views;
@@ -302,6 +312,24 @@
 				65B8AC9C2A000C140086D7B5 /* SettingsController.swift */,
 			);
 			path = Settings;
+			sourceTree = "<group>";
+		};
+		65D82BCF2A3CCBE6002124CC /* WAChartsView */ = {
+			isa = PBXGroup;
+			children = (
+				65D82BD02A3CCC0C002124CC /* Views */,
+				65D82BD12A3CCC30002124CC /* WAChartsView.swift */,
+			);
+			path = WAChartsView;
+			sourceTree = "<group>";
+		};
+		65D82BD02A3CCC0C002124CC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				65D82BD32A3CD043002124CC /* YAxisView.swift */,
+				65D82BD52A3CDCC9002124CC /* XAxisView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		65E225322A096C46006DC6C1 /* Views */ = {
@@ -398,17 +426,21 @@
 				65A29B2729FBE73E00BFEC58 /* OverviewController.swift in Sources */,
 				65B8AC9229FFFE3F0086D7B5 /* UIView + ext.swift in Sources */,
 				6597185B2A12908600336041 /* OverviewNavBar.swift in Sources */,
+				65D82BCE2A3CC8B1002124CC /* MonthlyPerformanceView.swift in Sources */,
 				65A29B3929FBEAD100BFEC58 /* TabBarController.swift in Sources */,
 				65A29B2329FBE73E00BFEC58 /* AppDelegate.swift in Sources */,
 				6565D1F52A39F9970045273E /* WABarView.swift in Sources */,
 				65B8AC992A0000A00086D7B5 /* SessionController.swift in Sources */,
 				6590F2EE2A34A01C00A9568B /* PercentView.swift in Sources */,
+				65D82BD22A3CCC30002124CC /* WAChartsView.swift in Sources */,
 				65B8AC9D2A000C140086D7B5 /* SettingsController.swift in Sources */,
 				650AB2602A1D1B2800FA2A6E /* WABaseInfoView.swift in Sources */,
 				657F8F1B2A2270120019B835 /* TimerView.swift in Sources */,
 				657F8F1D2A22703E0019B835 /* ProgressView.swift in Sources */,
 				6565D1EB2A39F58E0045273E /* StepsView.swift in Sources */,
 				65E225342A096CB4006DC6C1 /* WAButton.swift in Sources */,
+				65D82BD62A3CDCC9002124CC /* XAxisView.swift in Sources */,
+				65D82BD42A3CD043002124CC /* YAxisView.swift in Sources */,
 				65B8AC9B2A000BEF0086D7B5 /* ProgressController.swift in Sources */,
 				658B0CC22A38B620000E9087 /* StatsItemView.swift in Sources */,
 				65B8AC8C29FFF6950086D7B5 /* NavBarController.swift in Sources */,

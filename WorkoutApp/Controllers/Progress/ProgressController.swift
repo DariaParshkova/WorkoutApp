@@ -10,6 +10,7 @@ import UIKit
 class ProgressController: WABaseController {
     private let dailyPerformanceView = DailyPerformanceView(with: R.Strings.Progress.dailyPerformance, buttonTitle: R.Strings.Progress.last7Days)
     private let monthlyPerformanceView = MonthlyPerformanceView(with: R.Strings.Progress.monthlyPerformance, buttonTitle: R.Strings.Progress.last10Month)
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()

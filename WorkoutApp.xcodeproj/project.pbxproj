@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		650AB2602A1D1B2800FA2A6E /* WABaseInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650AB25F2A1D1B2800FA2A6E /* WABaseInfoView.swift */; };
+		65538DB82A3E01EA00B1C7C4 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65538DB72A3E01EA00B1C7C4 /* ChartView.swift */; };
 		6565D1EB2A39F58E0045273E /* StepsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6565D1EA2A39F58E0045273E /* StepsView.swift */; };
 		6565D1F02A39F7270045273E /* WABarsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6565D1EF2A39F7270045273E /* WABarsView.swift */; };
 		6565D1F52A39F9970045273E /* WABarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6565D1F42A39F9970045273E /* WABarView.swift */; };
@@ -45,6 +46,7 @@
 
 /* Begin PBXFileReference section */
 		650AB25F2A1D1B2800FA2A6E /* WABaseInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WABaseInfoView.swift; sourceTree = "<group>"; };
+		65538DB72A3E01EA00B1C7C4 /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
 		6565D1EA2A39F58E0045273E /* StepsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepsView.swift; sourceTree = "<group>"; };
 		6565D1EF2A39F7270045273E /* WABarsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WABarsView.swift; sourceTree = "<group>"; };
 		6565D1F42A39F9970045273E /* WABarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WABarView.swift; sourceTree = "<group>"; };
@@ -328,6 +330,7 @@
 			children = (
 				65D82BD32A3CD043002124CC /* YAxisView.swift */,
 				65D82BD52A3CDCC9002124CC /* XAxisView.swift */,
+				65538DB72A3E01EA00B1C7C4 /* ChartView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -450,6 +453,7 @@
 				65FF276D2A15380F00859125 /* WeekDayView.swift in Sources */,
 				6565D1F02A39F7270045273E /* WABarsView.swift in Sources */,
 				658B0CBF2A38B5C2000E9087 /* StatsView.swift in Sources */,
+				65538DB82A3E01EA00B1C7C4 /* ChartView.swift in Sources */,
 				65B8AC9029FFFBE60086D7B5 /* WABaseController.swift in Sources */,
 				65A29B2529FBE73E00BFEC58 /* SceneDelegate.swift in Sources */,
 				65B4423E2A3B2DAD00414622 /* DailyPerfermanceView.swift in Sources */,

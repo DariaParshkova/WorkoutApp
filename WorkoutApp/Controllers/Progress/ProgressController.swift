@@ -64,11 +64,12 @@ extension ProgressController {
                                                 .init(value: 60, title: "May"),
                                                 .init(value: 70, title: "Jun"),
                                                 .init(value: 80, title: "Jul"),
-                                                .init(value: 65, title: "Aug"),
+                                                .init(value: 1000, title: "Aug"),
                                                 .init(value: 45, title: "Sep"),
                                                 .init(value: 30, title: "Oct"),
                                                 .init(value: 15, title: "Nov"),
-                                                .init(value: 15, title: "Dec"),])
+                                                .init(value: 15, title: "Dec"),],
+                                                topChartOffset: 10)
       
     }
 }

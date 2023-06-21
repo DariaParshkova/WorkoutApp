@@ -87,6 +87,11 @@ enum R {
             static let downArrow = UIImage(named: "down_arrow")
             static let add = UIImage(named: "add_button")
         }
+        enum OverView {
+            static let rightArrow = UIImage(named: "right_arrow")
+            static let chckmarkDone = UIImage(named: "checkmark_done")
+            static let chckmarkNotDone = UIImage(named: "checkmark_not_done")
+        }
         enum Session {
             enum Stats {
                 static let averagePace = UIImage(named: "stats_averagePace")

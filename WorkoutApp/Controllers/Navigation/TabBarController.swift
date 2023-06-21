@@ -17,7 +17,7 @@ final class TabBarController : UITabBarController {
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
         configureApperance()
-        switchTo(tab: .progress) //при запуске получаем нужный таб
+        switchTo(tab: .overview) //при запуске получаем нужный таб
     }
     
     required init?(coder: NSCoder) {
